@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="main.css" rel="stylesheet">
+  <link rel="stylesheet" href="final.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <title>Reproductor</title>
+</head>
+<body class="bg-gray-100 font-sans">
+  <div class="flex">
+    <!-- Sidebar -->
+    <aside class="w-1/6 bg-white p-6 space-y-4">
+      <div class="flex items-center justify-center mb-8">
+        <div class="bg-purple-500 w-12 h-12 rounded-full flex items-center justify-center">
+          <img src="./img/logo streaming.png" > <!--alt="Icon" class="h-6 w-6 text-white"-->
+        </div>
+      </div>
+      <nav class="space-y-6">
+        <a href="#" class="flex items-center space-x-2 text-gray-800 hover:text-primary">
+          <span class="material-icons">person</span>
+          <span>Perfil</span>
+        </a>
+        <a href="#" class="flex items-center space-x-2 text-gray-800 hover:text-primary">
+          <span class="material-icons">library_books</span>
+          <span>Libreria</span>
+        </a>
+        <a href="#" class="flex items-center space-x-2 text-gray-800 hover:text-primary">
+          <span class="material-icons">music_note</span>
+          <span>Playlist</span>
+        </a>
+        <a href="#" class="flex items-center space-x-2 text-gray-800 hover:text-primary">
+          <span class="material-icons">history</span>
+          <span>Historial</span>
+        </a>
+      </nav>
+    </aside>
+
+    <!-- Main content -->
+    <main class="w-5/6 p-6">
+      <!-- Barra de busqueda -->
+      <div class="flex items-center mb-6">
+        <span class="material-icons text-gray-500">search</span>
+        <input type="text" placeholder="Búsqueda" class="flex-grow ml-3 p-2 bg-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-500">  
+      </div>
+
+      <div class="flex">
+        <!-- Cancion actual -->
+        <div class="w-2/3 p-6 bg-gray-200 rounded-lg">
+          <img src="./img/circles.jpg" alt="Album Cover" class="w-full h-80 object-cover rounded-lg mb-3">
+          <div class="flex items-center justify-between">
+            <div>
+              <h2 class="text-2xl font-semibold">Circles</h2>
+              <p class="text-gray-500">Post Malone</p>
+            </div>
+            <div class="flex items-center space-x-4">
+              <button class="text-gray-500 text-2xl">-</button>
+              <button class="text-gray-500 text-2xl">+</button>
+            </div>
+          </div>
+          <!--Barra de progreso-->
+          <div class="mt-4">
+            <div class="relative h-2 bg-gray-400 rounded-full">
+              <div class="absolute top-0 h-2 bg-primary rounded-full" style="width: 50%;"></div>
+              <div class="w-6 h-6 bg-purple-500 rounded-full absolute -top-2"></div>
+            </div>
+            <div class="flex justify-between text-gray-500 text-sm mt-2">
+              <span>0:00</span>
+              <span>3:30</span>
+            </div>
+          </div>
+          <div class="flex justify-between mt-4 text-gray-600">
+            <span class="material-icons">remove_circle_outline</span>
+            <span class="material-icons">skip_previous</span>
+            <span class="material-icons text-purple-500">play_arrow</span>
+            <span class="material-icons">skip_next</span>
+            <span class="material-icons">add_circle_outline</span>
+          </div>
+        </div>
+
+        <!-- Playlist -->
+        <div class="w-1/3 ml-6">
+          <h3 class="text-xl font-semibold mb-4">Lista de reproducción</h3>
+          <div class="space-y-4 bg-white p-4 rounded-lg border border-dashed border-primary">
+            <!-- Articulo de cada cancion -->
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-4">
+                <img src="./img/StillHot.png" alt="Song Cover" class="w-12 h-12 object-cover rounded-lg">
+                <div>
+                  <h4 class="font-medium">Still Hot</h4>
+                  <p class="text-sm text-gray-500">Nic D, Connor Price</p>
+                </div>
+              </div>
+              <button class="material-icons text-primary">play_circle</button>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-4">
+                <img src="./img/Losecontrol.jpg" alt="Song Cover" class="w-12 h-12 object-cover rounded-lg">
+                <div>
+                  <h4 class="font-medium">Lose control</h4>
+                  <p class="text-sm text-gray-500">Teddy Swims</p>
+                </div>
+              </div>
+              <button class="material-icons text-primary">play_circle</button>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-4">
+                <img src="./img/Phonenumbers.jpg" alt="Song Cover" class="w-12 h-12 object-cover rounded-lg">
+                <div>
+                  <h4 class="font-medium">Phone numbers</h4>
+                  <p class="text-sm text-gray-500">Dominic Fike</p>
+                </div>
+              </div>
+              <button class="material-icons text-primary">play_circle</button>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-4">
+                <img src="./img/Paradise.jpg" alt="Song Cover" class="w-12 h-12 object-cover rounded-lg">
+                <div>
+                  <h4 class="font-medium">Paradise</h4>
+                  <p class="text-sm text-gray-500">Bazzi</p>
+                </div>
+              </div>
+              <button class="material-icons text-primary">play_circle</button>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-4">
+                <img src="./img/Betternow.jpg" alt="Song Cover" class="w-12 h-12 object-cover rounded-lg">
+                <div>
+                  <h4 class="font-medium">Better now</h4>
+                  <p class="text-sm text-gray-500">Post Malone</p>
+                </div>
+              </div>
+              <button class="material-icons text-primary">play_circle</button>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-4">
+                <img src="./img/location.jpg" alt="Song Cover" class="w-12 h-12 object-cover rounded-lg">
+                <div>
+                  <h4 class="font-medium">Location</h4>
+                  <p class="text-sm text-gray-500">Khalid</p>
+                </div>
+              </div>
+              <button class="material-icons text-primary">play_circle</button>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-4">
+                <img src="./img/YoungWild&Free.jpg" alt="Song Cover" class="w-12 h-12 object-cover rounded-lg">
+                <div>
+                  <h4 class="font-medium">Young, Wild & Free</h4>
+                  <p class="text-sm text-gray-500">Snoop Dogg, Wiz Khalifa</p>
+                </div>
+              </div>
+              <button class="material-icons text-primary">play_circle</button>
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-4">
+                <img src="./img/StillHot.png" alt="Song Cover" class="w-12 h-12 object-cover rounded-lg">
+                <div>
+                  <h4 class="font-medium">Still Hot</h4>
+                  <p class="text-sm text-gray-500">Nic D, Connor Price</p>
+                </div>
+              </div>
+              <button class="material-icons text-primary">play_circle</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

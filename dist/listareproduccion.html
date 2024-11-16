@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista reproducción</title>
+  <link href="main.css" rel="stylesheet">
+  <link rel="stylesheet" href="final.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+<div class="flex h-screen">
+  <!-- Sidebar -->
+  <div class="w-1/5 bg-white p-5 shadow-lg">
+    <div class="flex items-center justify-center mb-8">
+        <div class="bg-purple-500 w-12 h-12 rounded-full flex items-center justify-center">
+          <img src="./img/logo streaming.png" > <!--alt="Icon" class="h-6 w-6 text-white"-->
+        </div>
+      </div>
+    <nav class="space-y-6">
+      <a href="#" class="flex items-center text-gray-700 hover:text-purple-500">
+        <span class="material-icons">person</span>
+        <span class="ml-3">Perfil</span>
+      </a>
+      <a href="#" class="flex items-center text-gray-700 hover:text-purple-500">
+        <span class="material-icons">library_books</span>
+        <span class="ml-3">Librería</span>
+      </a>
+      <a href="#" class="flex items-center text-gray-700 hover:text-purple-500">
+        <span class="material-icons">music_note</span>
+        <span class="ml-3">Playlist</span>
+      </a>
+      <a href="#" class="flex items-center text-gray-700 hover:text-purple-500">
+        <span class="material-icons">history</span>
+        <span class="ml-3">Historial</span>
+      </a>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <main class="flex-1 flex flex-col p-8 space-y-6">
+    <!-- Search Bar -->
+    <div class="flex items-center mb-4">
+      <span class="material-icons text-gray-500">search</span>
+      <input type="text" placeholder="Búsqueda" class="flex-grow ml-3 p-2 bg-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-500">
+    </div>
+
+    <!-- Now Playing Section -->
+    <div class="bg-white p-6 rounded-lg shadow-md flex items-center justify-between">
+      <!-- Song Info and Progress -->
+      <div class="flex items-center space-x-4">
+        <img src="./img/circles.jpg" alt="Album Cover" class="w-16 h-16 rounded-lg">
+        <div>
+          <h2 class="text-lg font-bold">Circles</h2>
+          <p class="text-gray-500">Post Malone</p>
+        </div>
+      </div>
+      <!-- Progress Bar and Controls -->
+      <div class="flex flex-col w-1/2">
+        <div class="relative h-1 bg-purple-500 rounded-full">
+          <div class="absolute -top-2 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-purple-500 rounded-full"></div>
+        </div>
+        <div class="flex justify-between mt-4 text-gray-600">
+          <span class="material-icons">skip_previous</span>
+          <span class="material-icons text-purple-500">play_arrow</span>
+          <span class="material-icons">skip_next</span>
+          <span class="material-icons">refresh</span>
+          <span class="material-icons">add_circle_outline</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Playlist Section -->
+    <section class="bg-gray-200 p-6 rounded-lg shadow-md">
+      <h3 class="text-xl font-semibold mb-4">Lista de reproducción</h3>
+      <ul class="space-y-2">
+        <li class="flex items-center justify-between bg-white rounded-lg p-3 shadow-sm">
+          <div class="flex items-center space-x-3">
+            <img src="./img/f1longbed.png" alt="Song" class="w-10 h-10 rounded-lg">
+            <div>
+              <span class="font-semibold">Si antes te hubiera conocido</span>
+              <p class="text-gray-500 text-sm">Karol G</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="text-sm">2:58</span>
+            <span class="material-icons text-purple-500 cursor-pointer">add</span>
+          </div>
+        </li>
+        <li class="flex items-center justify-between bg-white rounded-lg p-3 shadow-sm">
+          <div class="flex items-center space-x-3">
+            <img src="./img/f1longbed.png" alt="Song" class="w-10 h-10 rounded-lg">
+            <div>
+              <span class="font-semibold">Si antes te hubiera conocido</span>
+              <p class="text-gray-500 text-sm">Karol G</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="text-sm">2:58</span>
+            <span class="material-icons text-purple-500 cursor-pointer">add</span>
+          </div>
+        </li>
+        <li class="flex items-center justify-between bg-white rounded-lg p-3 shadow-sm">
+          <div class="flex items-center space-x-3">
+            <img src="./img/f1longbed.png" alt="Song" class="w-10 h-10 rounded-lg">
+            <div>
+              <span class="font-semibold">Si antes te hubiera conocido</span>
+              <p class="text-gray-500 text-sm">Karol G</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="text-sm">2:58</span>
+            <span class="material-icons text-purple-500 cursor-pointer">add</span>
+          </div>
+        </li>
+        <li class="flex items-center justify-between bg-white rounded-lg p-3 shadow-sm">
+          <div class="flex items-center space-x-3">
+            <img src="./img/f1longbed.png" alt="Song" class="w-10 h-10 rounded-lg">
+            <div>
+              <span class="font-semibold">Si antes te hubiera conocido</span>
+              <p class="text-gray-500 text-sm">Karol G</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="text-sm">2:58</span>
+            <span class="material-icons text-purple-500 cursor-pointer">add</span>
+          </div>
+        </li>
+        <li class="flex items-center justify-between bg-white rounded-lg p-3 shadow-sm">
+          <div class="flex items-center space-x-3">
+            <img src="./img/f1longbed.png" alt="Song" class="w-10 h-10 rounded-lg">
+            <div>
+              <span class="font-semibold">Si antes te hubiera conocido</span>
+              <p class="text-gray-500 text-sm">Karol G</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="text-sm">2:58</span>
+            <span class="material-icons text-purple-500 cursor-pointer">add</span>
+          </div>
+        </li>
+        <li class="flex items-center justify-between bg-white rounded-lg p-3 shadow-sm">
+          <div class="flex items-center space-x-3">
+            <img src="./img/f1longbed.png" alt="Song" class="w-10 h-10 rounded-lg">
+            <div>
+              <span class="font-semibold">Si antes te hubiera conocido</span>
+              <p class="text-gray-500 text-sm">Karol G</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="text-sm">2:58</span>
+            <span class="material-icons text-purple-500 cursor-pointer">add</span>
+          </div>
+        </li>
+        <!-- Repeat similar structure for additional songs -->
+      </ul>
+    </section>
+  </main>
+
+  <!-- Music Section -->
+  <div class="w-1/4 p-6">
+    <div class="bg-white rounded-lg p-4 shadow-md">
+      <img src="./img/verano.png" alt="Album Cover" class="w-full rounded-lg">
+      <h4 class="mt-4 text-xl font-bold">Musica para verano</h4>
+      <button class="w-full mt-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300">Reproducir todo</button>
+      <div class="flex justify-between mt-4">
+        <span class="material-icons text-gray-500">shuffle</span>
+        <span class="material-icons text-gray-500">share</span>
+        <span class="material-icons text-gray-500">more_vert</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Busqueda</title>
+  <link href="main.css" rel="stylesheet">
+  <link rel="stylesheet" href="final.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body class="bg-gray-100 flex">
+
+  <!-- Sidebar -->
+  <aside class="w-1/6 bg-white p-6 space-y-4">
+    <div class="flex items-center justify-center mb-8">
+      <div class="bg-purple-500 w-12 h-12 rounded-full flex items-center justify-center">
+        <img src="./img/logo streaming.png" > <!--alt="Icon" class="h-6 w-6 text-white"-->
+      </div>
+    </div>
+    <nav class="space-y-6">
+      <a href="#" class="flex items-center space-x-2 text-gray-800 hover:text-primary">
+        <span class="material-icons">person</span>
+        <span>Perfil</span>
+      </a>
+      <a href="#" class="flex items-center space-x-2 text-gray-800 hover:text-primary">
+        <span class="material-icons">library_books</span>
+        <span>Libreria</span>
+      </a>
+      <a href="#" class="flex items-center space-x-2 text-gray-800 hover:text-primary">
+        <span class="material-icons">music_note</span>
+        <span>Playlist</span>
+      </a>
+      <a href="#" class="flex items-center space-x-2 text-gray-800 hover:text-primary">
+        <span class="material-icons">history</span>
+        <span>Historial</span>
+      </a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="flex-1 p-8">
+
+    <!-- Barra de busqueda -->
+    <div class="flex items-center mb-4">
+        <span class="material-icons text-gray-500">search</span>
+        <input type="text" placeholder="Búsqueda" class="flex-grow ml-3 p-2 bg-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-500">
+      </div>
+
+    <!-- Seccion de sugerencias -->
+    <div class="flex gap-4">
+      <!-- Lista de seguerencias -->
+      <div class="w-2/3 bg-lightGray p-6 rounded-lg">
+        <h3 class="text-lg font-semibold mb-4">Sugerencias</h3>
+        
+        <!-- canciones de sugerencias -->
+        <ul class="space-y-4">
+          <li class="flex items-center bg-gray-200 rounded p-3">
+            <img src="./img/exodo.png" alt="Album Cover" class="w-10 h-10 rounded-full mr-3">
+            <div>
+              <p class="font-semibold">PATRULLA</p>
+              <p class="text-sm text-gray-600">Canción: Peso Pluma, Neton Vega</p>
+            </div>
+          </li>
+          <li class="flex items-center bg-gray-200 rounded p-3">
+            <img src="./img/exodo.png" alt="Album Cover" class="w-10 h-10 rounded-full mr-3">
+            <div>
+              <p class="font-semibold">PATRULLA</p>
+              <p class="text-sm text-gray-600">Canción: Peso Pluma, Neton Vega</p>
+            </div>
+          </li>
+          <li class="flex items-center bg-gray-200 rounded p-3">
+            <img src="./img/exodo.png" alt="Album Cover" class="w-10 h-10 rounded-full mr-3">
+            <div>
+              <p class="font-semibold">PATRULLA</p>
+              <p class="text-sm text-gray-600">Canción: Peso Pluma, Neton Vega</p>
+            </div>
+          </li>
+          <li class="flex items-center bg-gray-200 rounded p-3">
+            <img src="./img/exodo.png" alt="Album Cover" class="w-10 h-10 rounded-full mr-3">
+            <div>
+              <p class="font-semibold">PATRULLA</p>
+              <p class="text-sm text-gray-600">Canción: Peso Pluma, Neton Vega</p>
+            </div>
+          </li>
+         </ul>
+      </div>
+
+      <!-- Seccion de explorar -->
+      <div class="w-1/3 bg-lightGray p-6 rounded-lg">
+        <h3 class="text-lg font-semibold mb-4">Explorar todo</h3>
+        
+        <!-- Blocks de generos -->
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-blue-400 text-center rounded-lg py-6 text-white font-semibold">Cumbia</div>
+          <div class="bg-red-400 text-center rounded-lg py-6 text-white font-semibold">Salsa</div>
+          <div class="bg-green-400 text-center rounded-lg py-6 text-white font-semibold">Rock</div>
+          <div class="bg-red-600 text-center rounded-lg py-6 text-white font-semibold">Indie</div>
+          <div class="bg-yellow-500 text-center rounded-lg py-6 text-white font-semibold">R&B</div>
+          <div class="bg-purple-400 text-center rounded-lg py-6 text-white font-semibold">Jazz</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección de Géneros Populares -->
+    <h2 class="text-2xl font-bold mb-4">Géneros Populares</h2>
+    <div class="grid grid-cols-3 gap-4 mb-8">
+      <div class="bg-orange-400 rounded-lg text-white p-4">Regional Mexicano</div>
+      <div class="bg-green-400 rounded-lg text-white p-4">Pop Latino</div>
+      <div class="bg-blue-400 rounded-lg text-white p-4">Trap Latino</div>
+      <div class="bg-red-400 rounded-lg text-white p-4">Reguetón</div>
+      <div class="bg-yellow-400 rounded-lg text-white p-4">Salsa</div>
+      <div class="bg-cyan-400 rounded-lg text-white p-4">Cumbia</div>
+    </div>
+
+  </main>
+
+</body>
+</html>

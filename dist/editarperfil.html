@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Editar Perfil</title>
+<link href="main.css" rel="stylesheet" />
+<link rel="stylesheet" href="final.css">
+</head>
+<body class="bg-background justify-center items-center">
+
+  <!-- Contenedor del Formulario -->
+  <div class="form-container">
+    <h2 class="text-2xl font-bold text-textDark">Editar perfil</h2> <!-- Formulario -->
+    <form class="space-y-4">
+      <!-- Nombre de usuario -->
+      <div>
+        <label class="block text-sm font-medium text-textDark">Nombre de usuario</label>
+        <input type="text" value="adgtyjvuk6d3" class="w-full p-3 mt-1 bg-grayLight rounded-md focus:outline-none" />
+      </div>
+
+      <!-- Correo -->
+      <div>
+        <label class="block text-sm font-medium text-textDark">Correo</label>
+        <input type="email" value="mariela24@gmail.com" class="w-full p-3 mt-1 bg-grayLight rounded-md focus:outline-none" />
+      </div>
+
+      <!-- Contraseña -->
+      <div>
+        <label class="block text-sm font-medium text-textDark">Contraseña</label>
+        <input type="password" placeholder="Contraseña" class="w-full p-3 mt-1 bg-grayLight rounded-md focus:outline-none" />
+      </div>
+
+      <!-- Sexo -->
+      <div>
+        <label class="block text-sm font-medium text-textDark">Sexo</label>
+        <select class="w-full p-3 mt-1 bg-grayLight rounded-md focus:outline-none">
+          <option>Femenino</option>
+          <option>Masculino</option>
+          <option>Otro</option>
+        </select>
+      </div>
+
+      <!-- Fecha de nacimiento -->
+      <div>
+        <label class="block text-sm font-medium text-textDark">Fecha de nacimiento</label>
+        <input type="text" placeholder="MM/DD/AAAA" class="w-full p-3 mt-1 bg-grayLight rounded-md focus:outline-none" />
+      </div>
+
+      <!-- País o región -->
+      <div>
+        <label class="block text-sm font-medium text-textDark">País o región</label>
+        <input type="text" value="México" class="w-full p-3 mt-1 bg-grayLight rounded-md focus:outline-none" />
+      </div>
+
+      <!-- Confirmar contraseña -->
+      <div>
+        <label class="block text-sm font-medium text-textDark">Contraseña</label>
+        <input type="password" placeholder="Contraseña" class="w-full p-3 mt-1 bg-grayLight rounded-md focus:outline-none" />
+      </div>
+
+      <!-- Checkbox de términos y condiciones -->
+      <div class="flex items-center space-x-2">
+        <input type="checkbox" id="terms" class="w-4 h-4 text-primary focus:ring-primary border-gray-300 rounded">
+        <label for="terms" class="text-sm text-textDark">Aceptar términos y condiciones.</label>
+      </div>
+
+      <!-- Botones -->
+      <div class="flex justify-between mt-6">
+        <button type="button" class="py-2 px-4 bg-buttonGray text-white rounded-md hover:bg-gray-500">
+          Cancelar
+        </button>
+        <button type="submit" class="py-2 px-4 bg-primary text-white rounded-md hover:bg-purple-700">
+          Guardar perfil
+        </button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

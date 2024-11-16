@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link href="main.css" rel="stylesheet">
+  <link rel="stylesheet" href="final.css">
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-200r">
+
+  <!-- Registro card -->
+  <div class="bg-lightGray p-8 rounded-lg shadow-lg w-80 text-center">
+    
+    <!-- Logo -->
+    <div class="flex justify-center mb-6">
+      <img src="./img/logo streaming.png" alt="Logo" class="w-20 h-20">
+    </div>
+    
+    <!-- titulo -->
+    <h2 class="text-xl font-semibold mb-6">Regístrate</h2>
+
+    <!-- Form -->
+    <form class="space-y-4">
+      <input type="name" placeholder="Nombre" class="w-full p-3 rounded bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary">
+      <input type="email" placeholder="Correo" class="w-full p-3 rounded bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary">
+      <input type="password" placeholder="Contraseña" class="w-full p-3 rounded bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary">
+      
+    <!-- Checkbox de términos y condiciones -->
+    <div class="flex items-center space-x-2">
+        <input type="checkbox" id="terms" class="w-4 h-4 text-primary focus:ring-primary border-gray-300 rounded">
+        <label for="terms" class="text-sm text-textDark">Aceptar términos y condiciones.</label>
+    </div>
+
+      <!-- boton de iniciar sesion -->
+      <button type="submit" class="w-full p-3 rounded-lg bg-primary text-white font-semibold hover:bg-purple-700">
+        Crear cuenta
+      </button>
+    </form>
+
+
+</body>
+</html>
