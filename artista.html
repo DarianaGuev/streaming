@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artista</title>
+  <link href="main.css" rel="stylesheet">
+  <link rel="stylesheet" href="final.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+<div class="flex">
+  <!-- Sidebar -->
+  <aside class="w-1/6 bg-white p-6 space-y-4">
+    <div class="flex items-center justify-center mb-8">
+      <div class="bg-purple-500 w-12 h-12 rounded-full flex items-center justify-center">
+        <a href="inicio.html" class="flex items-center space-x-2 text-gray-800 hover:text-primary">
+        <img src="./img/logo streaming.png" > <!--alt="Icon" class="h-6 w-6 text-white"-->
+      </div>
+    </div>
+    <nav class="space-y-6">
+      <a href="perfiluser.html" class="flex items-center space-x-2 text-gray-800 hover:text-primary">
+        <span class="material-icons">person</span>
+        <span>Perfil</span>
+      </a>
+      <a href="libreria.html" class="flex items-center space-x-2 text-gray-800 hover:text-primary">
+        <span class="material-icons">library_books</span>
+        <span>Libreria</span>
+      </a>
+      <a href="listareproduccion.html" class="flex items-center space-x-2 text-gray-800 hover:text-primary">
+        <span class="material-icons">music_note</span>
+        <span>Playlist</span>
+      </a>
+      <a href="index.html" class="flex items-center space-x-2 text-gray-800 hover:text-primary">
+        <span class="material-icons">history</span>
+        <span>Historial</span>
+      </a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="flex-1 flex flex-col p-8 space-y-6">
+    <!-- Barra de busquedar -->
+    <div class="flex items-center mb-4">
+      <span class="material-icons text-gray-500">search</span>
+      <input type="text" placeholder="Búsqueda" class="flex-grow ml-3 p-2 bg-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-500">
+    </div>
+
+    <!-- Seccion de play -->
+    <div class="bg-white p-6 rounded-lg shadow-md flex items-center justify-between">
+      <!-- Info de cancion en progreso -->
+      <div class="flex items-center space-x-4">
+        <img src="./img/circles.jpg" alt="Album Cover" class="w-16 h-16 rounded-lg">
+        <div>
+          <h2 class="text-lg font-bold">Circles</h2>
+          <p class="text-gray-500">Post Malone</p>
+        </div>
+      </div>
+      <!-- Barra de progreso y Control -->
+      <div class="flex flex-col w-1/2">
+        <div class="relative h-1 bg-purple-500 rounded-full">
+          <div class="absolute -top-2 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-purple-500 rounded-full"></div>
+        </div>
+        <div class="flex justify-between mt-4 text-gray-600">
+          <span class="material-icons">skip_previous</span>
+          <span class="material-icons text-purple-500">play_arrow</span>
+          <span class="material-icons">skip_next</span>
+          <span class="material-icons">refresh</span>
+          <span class="material-icons">add_circle_outline</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Canciones populares -->
+    <section class="bg-gray-200 p-6 rounded-lg shadow-md">
+      <h3 class="text-xl font-semibold mb-4">Populares</h3>
+      <ul class="space-y-2">
+        <li class="flex items-center justify-between bg-white rounded-lg p-3 shadow-sm">
+          <div class="flex items-center space-x-3">
+            <img src="./img/ihadsome.png" alt="Song" class="w-10 h-10 rounded-lg">
+            <span>I had some help (Feat. Morgan Wallen)</span>
+          </div>
+          <span>2:58</span>
+        </li>
+        <li class="flex items-center justify-between bg-white rounded-lg p-3 shadow-sm">
+          <div class="flex items-center space-x-3">
+            <img src="./img/fortnifht.png" alt="Song" class="w-10 h-10 rounded-lg">
+            <span>Fortnight (Feat. Post Malone)</span>
+          </div>
+          <span>2:58</span>
+        </li>
+        <li class="flex items-center justify-between bg-white rounded-lg p-3 shadow-sm">
+          <div class="flex items-center space-x-3">
+            <img src="./img/circles.jpg" alt="Song" class="w-10 h-10 rounded-lg">
+            <span>Sunflower - Spider-Man</span>
+          </div>
+          <span>2:58</span>
+        </li>
+        <li class="flex items-center justify-between bg-white rounded-lg p-3 shadow-sm">
+          <div class="flex items-center space-x-3">
+            <img src="./img/circles.jpg" alt="Song" class="w-10 h-10 rounded-lg">
+            <span>Circles</span>
+          </div>
+          <span>2:58</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Seccion de albumnes -->
+    <section class="mt-6">
+      <h3 class="text-xl font-semibold mb-4">Álbumes</h3>
+      <div class="flex space-x-4">
+        <div class="w-1/3 bg-white rounded-lg shadow-lg p-4">
+          <img src="./img/f1longbed.png" alt="Album Cover" class="w-full h-32 object-cover rounded-lg">
+          <h4 class="mt-2 font-semibold">F-1 Trillion: Long Bed</h4>
+          <p class="text-gray-500">2024 - Álbum</p>
+        </div>
+        <div class="w-1/3 bg-white rounded-lg shadow-lg p-4">
+          <img src="./img/guyforthat.png" alt="Album Cover" class="w-full h-32 object-cover rounded-lg">
+          <h4 class="mt-2 font-semibold">F-1 Trillion</h4>
+          <p class="text-gray-500">2024 - Álbum</p>
+        </div>
+        <div class="w-1/3 bg-white rounded-lg shadow-lg p-4">
+          <img src="./img/austin.png" alt="Album Cover" class="w-full h-32 object-cover rounded-lg">
+          <h4 class="mt-2 font-semibold">AUSTIN</h4>
+          <p class="text-gray-500">2023 - Álbum</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Seccion de perfil -->
+
+  <div class="w-1/4 p-6">
+    <div class="bg-white rounded-lg p-4 shadow-md">
+      <img src="./img/postmalone.jpg" alt="Album Cover" class="w-full rounded-lg">
+      <h4 class="mt-4 text-xl font-bold">Post Malone</h4>
+      <p class="text-gray-500">El creador de éxitos estadounidense, Post Malone, certificado Diamante, cierra la brecha entre los mundos del rap y el pop mainstream.</p>
+      <button class="w-full mt-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300">Seguir</button>
+      <div class="flex justify-between mt-4">
+        <span class="material-icons text-gray-500">shuffle</span>
+        <span class="material-icons text-gray-500">share</span>
+        <span class="material-icons text-gray-500">more_vert</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
